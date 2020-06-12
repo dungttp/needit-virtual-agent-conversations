@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="_PRVW__8bf233d29f5110106ba53fc7632254cb">87f233d21b511010c3fb31d7dc4bcbcc</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"3ed28b0b217d4fd38ec9515c79c6ed10","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"3ed28b0b217d4fd38ec9515c79c6ed10"}],"goals":[{"name":"primary","trigger_id":"3ed28b0b217d4fd38ec9515c79c6ed10","nodes":[{"type":"StartGoal","goal_id":"25ada6d7f54640a89d2d4ac379c58a78","greeting_msg":{"type":"String","mode":"string","value":" I can help you find and update NeedIt records for a type of request."},"id":"91a8d275d6924623b568436fe014211b","name":"Start"},{"type":"TerminateGoal","goal_id":"25ada6d7f54640a89d2d4ac379c58a78","confirmation_msg":{"type":"String","mode":"string","value":"Ask again when you need to update other NeedIt records."},"id":"dbb0605607b14e7fbdddab1b68797958","name":"End"},{"type":"ChoiceInputPrompt","expression_mode":"simple","id":"5a0ff9587a4f4fbcb3c70d4c27c26f55","name":"NeedIt Type","goal_id":"25ada6d7f54640a89d2d4ac379c58a78","applicability":{"type":"Applicability","mode":"script","value":"true"},"variable_id":"67a1f27a37324d10a6d7b4c59b14a993","message":{"type":"String","mode":"string","value":"Which type of NeedIt record would you like to view?"},"optional":false,"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":false}},{"type":"OutputPrompt","value":{"type":"String","mode":"string","value":"You selected:{{vaInputs.needit_type}}"},"id":"c118a4551b5047ca8fb4e3be0d876cba","name":"Confirm NeedIt Type","goal_id":"25ada6d7f54640a89d2d4ac379c58a78","applicability":{"type":"Applicability","mode":"script","value":"true"}}],"edges":[{"type":"Edge","source_node_id":"91a8d275d6924623b568436fe014211b","target_node_id":"5a0ff9587a4f4fbcb3c70d4c27c26f55","id":"e0e6f4c49faa4047a7bab154740b7325"},{"type":"Edge","source_node_id":"5a0ff9587a4f4fbcb3c70d4c27c26f55","target_node_id":"c118a4551b5047ca8fb4e3be0d876cba","id":"5bd076fee5214cbcb9df6e4cf10e30f4"},{"type":"Edge","source_node_id":"c118a4551b5047ca8fb4e3be0d876cba","target_node_id":"dbb0605607b14e7fbdddab1b68797958","id":"89b8dc79a55e4ebaac18bc319ace8d98"}],"id":"25ada6d7f54640a89d2d4ac379c58a78"}],"script_variables":[],"glide_variables":[{"type":"Choice","choices":[{"name":"Legal","element":"legal"},{"name":"Facilities","element":"facilities"},{"name":"Human Resources","element":"hr"}],"id":"67a1f27a37324d10a6d7b4c59b14a993","name":"needit_type"},{"type":"Reference","table":"sys_user","id":"current-user","name":"user"}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"bf4327d21b111010c3fb31d7dc4bcbb8","id":"1b64ef121b111010c3fb31d7dc4bcbbb","name":"_PRVW__8bf233d29f5110106ba53fc7632254cb","key_phrases":["Update NeedIt Records","NeedIt Request"],"nlu_provider":"","nlu_model":"","nlu_intent":"","flexible_conversation_switching":false,"design_category":"59b3ef161b111010c3fb31d7dc4bcb31"}</design_definition>
+        <design_topic_id>1b64ef121b111010c3fb31d7dc4bcbbb</design_topic_id>
+        <name>_PRVW__8bf233d29f5110106ba53fc7632254cb</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-12 03:56:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>8ff233d21b511010c3fb31d7dc4bcbce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="NeedIt Virtual Agent Conversations" source="x_500643_needit_vi">bf4327d21b111010c3fb31d7dc4bcbb8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt Virtual Agent Conversations">bf4327d21b111010c3fb31d7dc4bcbb8</sys_scope>
+        <sys_update_name>sys_cb_design_topic_8ff233d21b511010c3fb31d7dc4bcbce</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-12 03:56:02</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>
